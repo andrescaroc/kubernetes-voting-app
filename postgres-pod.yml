@@ -12,7 +12,5 @@ spec:
     ports:
     - containerPort: 5432
     env:
-      - name: POSTGRES_USER
-        value: admin
-      - name: POSTGRES_PASSWORD
-        value: admin 
+    - name: POSTGRES_HOST_AUTH_METHOD
+      value: trust
